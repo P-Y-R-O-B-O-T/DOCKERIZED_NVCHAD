@@ -1,0 +1,54 @@
+services:
+  nvchad_edit:
+    container_name: "nvchad"
+    image: nvchad_dev_env
+    stdin_open: true
+    tty: true
+    volumes:
+      - nvchad_bin:/bin
+      - nvchad_etc:/etc
+      - nvchad_home_projects:/home
+      - nvchad_lib:/lib
+      - nvchad_media:/media
+      - nvchad_mnt:/mnt
+      - nvchad_opt:/opt
+      - nvchad_root:/root
+      - nvchad_run:/run
+      - nvchad_sbin:/sbin
+      - nvchad_srv:/srv
+      - nvchad_sys:/sys
+      - nvchad_tmp:/tmp
+      - nvchad_usr:/usr
+      - nvchad_var:/var
+
+volumes:
+  nvchad_bin:
+    name: "nvchad_bin"
+  nvchad_etc:
+    name: "nvchad_etc"
+  nvchad_home_projects:
+    name: "nvchad_home_projects"
+  nvchad_lib:
+    name: "nvchad_lib"
+  nvchad_media:
+    name: "nvchad_media"
+  nvchad_mnt:
+    name: "nvchad_mnt"
+  nvchad_opt:
+    name: "nvchad_opt"
+  nvchad_root:
+    name: "nvchad_root"
+  nvchad_run:
+    name: "nvchad_run"
+  nvchad_sbin:
+    name: "nvchad_sbin"
+  nvchad_srv:
+    name: "nvchad_srv"
+  nvchad_sys:
+    name: "nvchad_sys"
+  nvchad_tmp:
+    name: "nvchad_tmp"
+  nvchad_usr:
+    name: "nvchad_usr"
+  nvchad_var:
+    name: "nvchad_var"
