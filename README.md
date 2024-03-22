@@ -26,7 +26,7 @@ chmod +x install.sh
 
 * Run your very own dockerised `NV_CHAD`
 ```bash
-sudo nvchad_doc
+sudo doc_nvchad
 ```
 * Use `NV_CHAD` using ty issuing `nvim` command
 
